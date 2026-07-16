@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpyGrowth</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="shortcut icon" href="/assets/images/SPYGROWTH-logo2.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+<style>
+/* =====================================
+   BLOG SECTION
+===================================== */
+
+.blog-section {
+
+    padding: 120px 0;
+
+    background: #ffffff;
+
+}
+
+.blog-container {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+}
+
+/* HEADER */
+
+.blog-header {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 70px;
+
+}
+
+.blog-header h2 {
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    color: #2d2d32;
+
+    margin-bottom: 20px;
+
+    line-height: 1.2;
+
+}
+
+.blog-header p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #666;
+
+}
+
+/* GRID */
+
+.blog-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+
+}
+
+/* CARD */
+
+.blog-card {
+
+    transition: .35s ease;
+
+}
+
+.blog-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.blog-image {
+
+    display: block;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+}
+
+.blog-image img {
+
+    width: 100%;
+
+    display: block;
+
+    aspect-ratio: 16/10;
+
+    object-fit: cover;
+
+    transition: .5s ease;
+
+}
+
+.blog-card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+/* CONTENT */
+
+.blog-content {
+
+    padding-top: 18px;
+
+}
+
+.blog-date {
+
+    display: block;
+
+    font-size: 14px;
+
+    color: #666;
+
+    margin-bottom: 12px;
+
+}
+
+.blog-content h3 {
+
+    font-size: 24px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+
+}
+
+.blog-content h3 a {
+
+    color: #222;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+
+}
+
+.blog-content h3 a:hover {
+
+    color: #7c4dff;
+
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 992px) {
+
+    .blog-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .blog-section {
+
+        padding: 80px 0;
+
+    }
+
+    .blog-header {
+
+        margin-bottom: 50px;
+
+    }
+
+    .blog-header h2 {
+
+        font-size: 24px;
+
+    }
+
+    .blog-header p {
+
+        font-size: 18px;
+
+    }
+
+    .blog-content h3 {
+
+        font-size: 24px;
+
+    }
+
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .blog-image {
+
+        border-radius: 18px;
+
+    }
+
+    .blog-content h3 {
+
+        font-size: 22px;
+
+    }
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <?php get_header(); ?>
+
+
+<section class="blog-section">
+
+    <div class="blog-container">
+
+        <div class="blog-header">
+
+            <h2>Insights & Blogs</h2>
+
+            <p>
+                Expand your link building knowledge with detailed tutorials,
+                SEO strategies, and real-world case studies.
+            </p>
+
+        </div>
+
+        <div class="blog-grid">
+
+            <!-- Blog Card 1 -->
+
+            <article class="blog-card">
+
+                <a href="#" class="blog-image">
+
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog1.avif" alt="SpyGrowth">
+
+
+                </a>
+
+                <div class="blog-content">
+
+                    <span class="blog-date">
+                        June 9, 2026
+                    </span>
+
+                    <h3>
+                        <a href="#">
+                            How I Evaluate Backlink Quality for SaaS Websites
+                        </a>
+                    </h3>
+
+                </div>
+
+            </article>
+
+            <!-- Blog Card 2 -->
+
+            <article class="blog-card">
+
+                <a href="#" class="blog-image">
+
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog2.avif" alt="SpyGrowth">
+
+
+                </a>
+
+                <div class="blog-content">
+
+                    <span class="blog-date">
+                        April 27, 2026
+                    </span>
+
+                    <h3>
+                        <a href="#">
+                            5 SaaS Link Building Strategies to Outrank Competitors
+                        </a>
+                    </h3>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+    <?php get_footer(); ?>
+
+
+
+    <script src="/assets/script.js"></script>
+
+    
+</body>
+
+</html>
